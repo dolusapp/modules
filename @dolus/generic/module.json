@@ -1,0 +1,632 @@
+{
+    "id": "@dolus/generic",
+    "version": "1.0.0",
+    "name": "Generic Sandbox",
+    "description": "Simulates various generic sandbox processes and files.",
+    "author": {
+        "name": "Dolus Team",
+        "email": "contact@dolus.com",
+        "github": "https://github.com/dolus-team"
+    },
+    "actions": [
+        {
+            "name": "create-process",
+            "image": "SbieCtrl.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "joeboxserver.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "joeboxcontrol.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "sandboxierpcss.exe",
+            "pipe": "cuckoo",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "ollydbg.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "pexplorer.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "idag.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "procanalyzer.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "idag64.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "processhacker.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "idaq.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "idaq64.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "immunitydebugger.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "tcpdump.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "tcpview.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "regshot.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "dumpcap.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "windbg.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "wireshark.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "Fiddler.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "x64dbg.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "x32dbg.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "autoruns.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "autorunsc.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "filemon.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "procmon.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "regmon.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "procexp.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "procexp64.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "Procmon64.exe",
+            "attributes": {
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "",
+                "file-description": "",
+                "internal-name": "",
+                "legal-copyright": "",
+                "legal-trademark": "",
+                "original-filename": "",
+                "private-build": "",
+                "product-name": "",
+                "product-version": "",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\email.doc",
+            "type": "txt"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\email.htm",
+            "type": "txt"
+        },
+        {
+            "name": "create-directory",
+            "path": "%SystemDrive%\\123\\"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\123\\email.doc",
+            "type": "txt"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\123\\email.docx",
+            "type": "txt"
+        },
+        {
+            "name": "create-directory",
+            "path": "%SystemDrive%\\a\\"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\a\\foobar.bmp",
+            "type": "dummy"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\a\\foobar.doc",
+            "type": "dummy"
+        },
+        {
+            "name": "create-file",
+            "path": "%SystemDrive%\\a\\foobar.gif",
+            "type": "dummy"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE",
+            "key": "Wine"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\DSDT",
+            "key": "PRLS__"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_1AB8&DEV_4000&SUBSYS_04001AB8&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_1AB8&DEV_4006&SUBSYS_04061AB8&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_1AB8&DEV_4005&SUBSYS_04001AB8&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_5333&DEV_8811&SUBSYS_00000000&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control",
+            "key": "VirtualDeviceDrivers"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "id": "@dolus/qemu",
+    "version": "1.0.0",
+    "name": "QEMU Simulator",
+    "description": "Simulates a QEMU virtual machine environment by creating typical QEMU-related files, services, processes, and registry entries, including QEMU Guest Agent and SPICE components.",
+    "author": {
+        "name": "Dolus Team",
+        "email": "contact@dolus.com",
+        "github": "https://github.com/dolus-team"
+    },
+    "actions": [
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\Qemu-ga\\"
+        },
+        {
+            "name": "create-service",
+            "image": "qemu-ga.exe",
+            "service-name": "QEMU-GA",
+            "display-name": "QUEMU Guest Agent",
+            "directory": "%ProgramFiles%\\Qemu-ga\\",
+            "attributes": {
+                "company-name": "https://www.qemu.org",
+                "file-description": "QEMU machine emulators and tools",
+                "file-version": "8.2.6.0",
+                "legal-copyright": "Copyright various authors. Released under the GNU General Public License.",
+                "legal-trademark": "QEMU is a trademark of Fabrice Bellard.",
+                "product-name": "QEMU"
+            }
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\SPICE Guest Tools\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\SPICE Guest Tools\\64\\"
+        },
+        {
+            "name": "create-service",
+            "image": "vdservice.exe",
+            "service-name": "vdservice",
+            "display-name": "SPICE VDAgent Service",
+            "directory": "%ProgramFiles%\\SPICE Guest Tools\\64\\",
+            "attributes": {
+                "company-name": "Red Hat Inc.",
+                "file-description": "Spice service",
+                "file-version": "1.1.0.10012",
+                "legal-copyright": "© 2024 Red Hat, Inc.",
+                "legal-trademark": "Red Hat",
+                "product-name": "Red Hat Spice"
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "vdagent.exe",
+            "directory": "%ProgramFiles%\\SPICE Guest Tools\\64\\",
+            "attributes": {
+                "company-name": "Red Hat Inc.",
+                "file-description": "Spice service",
+                "file-version": "1.1.0.10012",
+                "legal-copyright": "© 2024 Red Hat, Inc.",
+                "legal-trademark": "Red Hat",
+                "product-name": "Red Hat Spice"
+            }
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\qemu-ga\\"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramData%\\qemu-ga\\qga.state",
+            "type": "dummy"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\balloon.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vioser.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vioscsi.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\Classes",
+            "key": "QGAVSSProvider"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\Wow6432Node\\RedHat\\RHEL\\Tools",
+            "key": "QemuGA"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "QEMU Guest Agent VSS Provider"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "QEMU-GA"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\DSDT\\BOCHS_",
+            "key": "BXPCDSDT"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\FADT\\BOCHS_",
+            "key": "BXPCDSDT"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\RSDT\\BOCHS_",
+            "key": "BXPCDSDT"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_1AF4&DEV_1003&SUBSYS_00031AF4&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_1AF4&DEV_1004&SUBSYS_00081AF4&REV_00"
+        }
+    ]
+}

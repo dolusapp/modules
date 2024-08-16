@@ -1,0 +1,589 @@
+{
+    "id": "@dolus/vmware",
+    "version": "1.0.0",
+    "name": "VMWare Simulator",
+    "description": "Simulates a VMware virtual machine environment by creating typical VMware-related files, processes, services, and registry entries.",
+    "author": {
+        "name": "Dolus Team",
+        "email": "support@dolus.com",
+        "github": "https://github.com/dolusapp/modules"
+    },
+    "actions": [
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware VGAuth\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\RawdskCompatibility\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\RawdskCompatibility\\virtual\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\RawdskCompatibility\\native\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\logs\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware Tools\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware Tools\\Unity Filters\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\VMWare VGAuth\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware VGAuth\\aliasStore\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware VGAuth\\msgCatalogs\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramData%\\VMware\\VMware VGAuth\\messages\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\messages\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\plugins\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\win32\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\win64\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%CommonProgramFiles%\\VMware\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%CommonProgramFiles%\\VMware\\Drivers\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%CommonProgramFiles%\\VMware\\InstallerCache\\"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramData%\\VMware\\VMware VGAuth\\vgauth.conf",
+            "type": "txt"
+        },
+        {
+            "name": "create-service",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\",
+            "image": "vmtoolsd.exe",
+            "pipe": "HGFS",
+            "display-name": "VMware Tools",
+            "service-name": "VMTools",
+            "attributes": {
+                "file-version": "12.4.0.48309",
+                "product-version": "12.4.0 build-23259341",
+                "product-name": "VMware Tools",
+                "company-name": "VMware, Inc.",
+                "file-description": "VMware Tools Core Service",
+                "legal-copyright": "Copyright © 1998-2024 Broadcom Inc. and/or its subsidiaries. All Rights Reserved."
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "vmwareuser.exe",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\",
+            "elevated": true,
+            "attributes": {
+                "internal-name": "VMwareUser",
+                "product-name": "VMware User Process",
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "VMware, Inc.",
+                "private-build": "",
+                "product-version": "5.0.0 build-13124",
+                "file-description": "VMwareUser",
+                "legal-copyright": "Copyright © 1998-2005 VMware, Inc.",
+                "legal-trademark": "",
+                "original-filename": "VMwareUser.exe",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-service",
+            "image": "vmvss.exe",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\",
+            "service-name": "vmvss",
+            "display-name": "VMware Snapshot Provider",
+            "attributes": {
+                "file-version": "12.4.0.48309",
+                "product-version": "12.4.0 build-23259341",
+                "product-name": "VMware Tools",
+                "company-name": "VMware, Inc.",
+                "file-description": "VMware Tools Core Service",
+                "legal-copyright": "Copyright © 1998-2024 Broadcom Inc. and/or its subsidiaries. All Rights Reserved."
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "vmwaretray.exe",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\",
+            "elevated": true,
+            "attributes": {
+                "internal-name": "VMwareUser",
+                "product-name": "VMware User Process",
+                "file-version": "1.0.0.0",
+                "comments": "",
+                "company-name": "VMware, Inc.",
+                "private-build": "",
+                "product-version": "5.0.0 build-13124",
+                "file-description": "VMware Tray Process",
+                "legal-copyright": "Copyright © 1998-2005 VMware, Inc.",
+                "legal-trademark": "",
+                "original-filename": "VMwareUser.exe",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "vmacthlp.exe",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\",
+            "attributes": {
+                "file-version": "12.4.0.48309",
+                "product-version": "12.4.0 build-23259341",
+                "product-name": "VMware Tools",
+                "company-name": "VMware, Inc.",
+                "file-description": "VMware Tools Core Service",
+                "legal-copyright": "Copyright © 1998-2024 Broadcom Inc. and/or its subsidiaries. All Rights Reserved."
+            }
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\vmtools.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\VMwareHostOpen.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\rvmSetup.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\VMWare VGAuth\\VGAuthCLI.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-service",
+            "image": "VGAuthService.exe",
+            "service-name": "VGAuthService",
+            "display-name": "VMware Alias Manager and Ticket Service",
+            "pipe": "vgauth-service",
+            "directory": "%ProgramFiles%\\VMware\\VMware Tools\\VMWare VGAuth\\",
+            "attributes": {
+                "company-name": "VMware, Inc.",
+                "file-description": "VMware Guest Authentication Service",
+                "file-version": "1.1.0.10012",
+                "legal-copyright": "Copyright 1998-2018 VMware, Inc.",
+                "legal-trademark": "",
+                "product-name": "VMware Guest Authentication",
+                "product-version": "1.0.0 build-23244705",
+                "internal-name": "VGAuthService",
+                "original-filename": "VGAuthService.exe"
+            }
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\VMware\\VMware Tools\\VMWare VGAuth\\VMwareAliasImport.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dco.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3ddevapi64-debug.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3ddevapi64-release.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3ddevapi64-stats.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3ddevapi64.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dgl64.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dglhelper64.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-process",
+            "image": "vm3dservice.exe",
+            "directory": "%System32%\\",
+            "pipe": "vmci",
+            "elevated": true,
+            "attributes": {
+                "internal-name": "vm3dservice.exe",
+                "product-name": "VMware SVGA 3D",
+                "file-version": "8.17.02.0014",
+                "comments": "",
+                "company-name": "VMware, Inc.",
+                "private-build": "",
+                "product-version": "8.17.02.0014 - build-17592369",
+                "file-description": "VMware SVGA Helper Service",
+                "legal-copyright": "Copyright (C) 1998-2020 VMware, Inc.",
+                "legal-trademark": "",
+                "original-filename": "vm3dservice.exe",
+                "special-build": ""
+            }
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64-debug.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64-stats.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64_10-debug.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64_10-stats.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64_10.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vm3dum64_loader.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vmGuestLib.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vmGuestLibJava.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vmhgfs.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VMWSU.DLL",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vsocklib.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmmouse.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmhgfs.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vm3dmp.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vm3dmp-stat.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vm3dmp-debug.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vm3dmp_loader.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vsock.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmci.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmmemctl.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmrawdsk.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmusbmouse.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmnet.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmusb.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmx86.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmkdb.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmnetuserif.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\vmnetadapter.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\VMware, Inc.",
+            "key": "VMware Tools"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\VMWare",
+            "key": "VMTools"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\DSDT",
+            "key": "PTLTD_"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\SCSI",
+            "key": "VMware"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VMware"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmci"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmhgfs"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmmouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmvss"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmusbmouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmxnet"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VMTools"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VMMEMCTL"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VGAuthService"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vm3dmp"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "vmrawdsk"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "vmmouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "VMMemCtl"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "vmci"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "vmhgfs"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "vmrawdsk"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "VMTools"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "vmusbmouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet001\\Services",
+            "key": "VGAuthService"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_15AD&DEV_0740&SUBSYS_074015AD&REV_10"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "key": "SystemManufacturer",
+            "value": "VMware, Inc.",
+            "type": "string"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System\\BIOS",
+            "key": "SystemProductName",
+            "value": "VMware Virtual Platform",
+            "type": "string"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Control\\SystemInformation",
+            "key": "SystemManufacturer",
+            "value": "VMware, Inc.",
+            "type": "string"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Control\\SystemInformation",
+            "key": "SystemProductName",
+            "value": "VMware Virtual Platform",
+            "type": "string"
+        }
+    ]
+}

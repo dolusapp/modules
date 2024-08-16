@@ -1,0 +1,356 @@
+{
+    "id": "@dolus/virtualbox",
+    "version": "1.0.0",
+    "name": "VirtualBox Simulator",
+    "description": "Simulates a VirtualBox virtual machine environment by creating typical VirtualBox-related files, processes, services, and registry entries, including Guest Additions components.",
+    "author": {
+        "name": "Dolus Team",
+        "email": "contact@dolus.com",
+        "github": "https://github.com/dolus-team"
+    },
+    "actions": [
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\Oracle\\"
+        },
+        {
+            "name": "create-directory",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\DIFxAPI.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\uninst.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxControl.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxDisp.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxDrvInst.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxGuest.cat",
+            "type": "cat"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxGuest.inf",
+            "type": "inf"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxGuest.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxMouse.cat",
+            "type": "cat"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxMouse.inf",
+            "type": "inf"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxMouse.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxTray.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxVideo.cat",
+            "type": "cat"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxVideo.inf",
+            "type": "inf"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxVideo.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%ProgramFiles%\\Oracle\\VirtualBox Guest Additions\\VBoxWHQLFake.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxDisp.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxHook.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglarrayspu.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglcrutil.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglerrorspu.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglfeedbackspu.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglpackspu.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\vboxoglpassthroughspu.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxControl.exe",
+            "type": "pe"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxDrv.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxMRXNP.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%System32%\\VBoxOGL.dll",
+            "type": "dll"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\VBoxMouse.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\VBoxGuest.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\VBoxSF.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-file",
+            "path": "%Drivers%\\VBoxVideo.sys",
+            "type": "sys"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\DSDT\\VBOX__",
+            "key": "VBOXBIOS"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\FADT\\VBOX__",
+            "key": "VBOXFACP"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\HARDWARE\\ACPI\\RSDT\\VBOX__",
+            "key": "VBOXXSDT"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_80EE&DEV_CAFE&SUBSYS_00000000&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\PCI",
+            "key": "VEN_80EE&DEV_BEEF&SUBSYS_040515AD&REV_00"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\IDE",
+            "key": "DiskVBOX_HARDDISK___________________________1.0_____"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum\\IDE",
+            "key": "CdRomVBOX_CD-ROM_____________________________1.0_____"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Enum\\IDE",
+            "key": "DiskVBOX_HARDDISK___________________________1.0_____"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Enum\\IDE",
+            "key": "CdRomVBOX_CD-ROM_____________________________1.0_____"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBox"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\Oracle",
+            "key": "VirtualBox Guest Additions"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBoxGuest"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBoxMouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBoxSF"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBoxService"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+            "key": "VBoxVideo"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\OpenGLDrivers",
+            "key": "VBoxOGL"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Services",
+            "key": "VBoxGuest"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Services",
+            "key": "VBoxMouse"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Services",
+            "key": "VBoxService"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Services",
+            "key": "VBoxSF"
+        },
+        {
+            "name": "create-registry-subkey",
+            "path": "HKLM\\SYSTEM\\ControlSet001\\Services",
+            "key": "VBoxVideo"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System",
+            "key": "SystemBiosVersion",
+            "type": "string",
+            "value": "VBOX"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System",
+            "key": "VideoBiosVersion",
+            "value": "Oracle VM VirtualBox",
+            "type": "string"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System",
+            "key": "SystemBiosDate",
+            "value": "06/23/99",
+            "type": "string"
+        },
+        {
+            "name": "write-registry-value",
+            "path": "HKLM\\HARDWARE\\DESCRIPTION\\System",
+            "key": "Identifier",
+            "value": "VBOX",
+            "type": "string"
+        },
+        {
+            "name": "create-service",
+            "service-name": "VBoxService",
+            "display-name": "VirtualBox Guest Additions Service",
+            "image": "VBoxService.exe",
+            "directory": "%System32%\\",
+            "pipe": "VBoxMiniRdDN",
+            "attributes": {
+                "file-version": "4.3.34.104062",
+                "product-version": "4.3.34.r104062",
+                "company-name": "Oracle Corporation",
+                "internal-name": "VBoxService",
+                "product-name": "Oracle VM VirtualBox Guest Additions",
+                "legal-copyright": "Copyright (C) 2009-2019 Oracle Corporation",
+                "file-description": "VirtualBox Guest Additions Service",
+                "original-filename": "VBoxService.exe",
+                "special-build": "r108956"
+            }
+        },
+        {
+            "name": "create-process",
+            "image": "vboxtray.exe",
+            "directory": "%System32%\\",
+            "elevated": true,
+            "attributes": {
+                "file-version": "4.3.34.104062",
+                "product-version": "4.3.34.r104062",
+                "company-name": "Oracle Corporation",
+                "internal-name": "VBoxTray",
+                "product-name": "Oracle VM VirtualBox Guest Additions",
+                "legal-copyright": "Copyright (C) 2009-2019 Oracle Corporation",
+                "file-description": "VirtualBox Guest Additions Tray Application",
+                "original-filename": "VBoxTray.exe",
+                "special-build": "r111374"
+            },
+            "pipe": "VBoxTrayIPC"
+        }
+    ]
+}
